@@ -1572,3 +1572,46 @@ hr {
 }
 
 
+/* 4 Services */
+.services_wrapper h3 span{
+  color:white;
+}
+.services_wrapper .service_phone{
+  max-width:70%;
+}
+
+
+.services-heading{
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: poppins, sans-serif;
+}
+
+.services-icon{
+  height: 70px;
+  width: 70px;
+}
+
+.services{
+  margin-top: 200px;
+}
+
+@media (max-width: 576px) {
+  .services-summary .process .process-info p {
+    text-align: center;
+  }
+}
+.card-body {
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
+  border-radius: 12px;
+}
+
+.services_wrapper{
+  margin-top: 200px;
+  margin-bottom: 200px;
+  background-color: #dfe1e2;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
