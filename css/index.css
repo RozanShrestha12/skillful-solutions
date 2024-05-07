@@ -117,7 +117,7 @@ nav .navbar-nav .nav-link:hover {
 }
 
 .logo {
-  width: 20rem;
+  
   min-height: 10rem;
   max-height: 12rem;
   object-fit: contain;
@@ -218,7 +218,7 @@ nav .navbar-nav .nav-link:hover {
 
 .nav-hero .hero .hero-content,
 .nav-hero .inner-hero .hero-content {
-  padding: 3rem 0rem 10rem;
+  padding: 6rem 0rem 10rem;
 }
 
 @media (max-width: 1200px) {
@@ -1614,4 +1614,154 @@ hr {
   background-color: #dfe1e2;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+
+.about-us-dark {
+  position: relative;
+  padding: 4rem 0;
+  color: #fcfef7;
+}
+.about-us-dark ::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url("../img/magicpattern-mesh-gradient.png") no-repeat center center/cover;
+  filter: blur(1px) brightness(50%);
+  padding: 4rem 0 !important;
+}
+
+
+.about-us {
+  padding-bottom: 4rem;
+  color: #ffffff;
+}
+.about-us .opposite {
+  flex-direction: row-reverse;
+}
+.about-us .opposite .img-div::after {
+  right: inherit;
+  left: -2rem;
+  bottom: -2rem;
+}
+.about-us .about-us-flex {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .about-us .about-us-flex {
+    flex-direction: column;
+  }
+}
+.about-us .about-us-flex .info-div {
+  width: 48%;
+}
+@media (max-width: 992px) {
+  .about-us .about-us-flex .info-div {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+.about-us .about-us-flex .info-div ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+@media (max-width: 430px) {
+  .about-us .about-us-flex .info-div ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.about-us .about-us-flex .info-div li::before {
+  content: "\f058";
+ 
+  font-size: 1.4rem;
+  font-family: "Font Awesome 5 Free";
+  padding: 0 6px 0 0;
+}
+.about-us .about-us-flex .img-div {
+  width: 48%;
+  height: 100%;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .about-us .about-us-flex .img-div {
+    width: 100%;
+  }
+}
+.about-us .about-us-flex .img-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.about-us .about-us-flex .img-div::after {
+  position: absolute;
+  content: "";
+ 
+  width: 50%;
+  height: 50%;
+  border-radius: 12px;
+  right: -0.9rem;
+  bottom: -0.9rem;
+  z-index: -1;
+}
+
+.resource{
+  margin: 20px;
+}
+
+.resources .flex {
+  display: flex;
+  padding: 2rem 0;
+}
+@media (max-width: 992px) {
+  .resources .flex {
+    flex-wrap: wrap;
+  }
+}
+.resources .flex .resource {
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+}
+.resources .flex .resource .img-div {
+  margin-bottom: 1rem;
+  max-height: 20rem;
+  width: 100%;
+  overflow: hidden;
+}
+.resources .flex .resource .img-div img {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.resources .flex .resource .info-div .title {
+  font-size: 22px;
+  font-weight: 600;
+  min-height: 3.3rem;
+}
+.resources .flex .buttons-flex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 450px) {
+  .resources .flex .buttons-flex {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.about-points{
+  color: #000;
+
+}
+
+.about-points-2{
+  color: #141618;
 }
